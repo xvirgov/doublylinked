@@ -1,0 +1,28 @@
+title: doublylinked
+description: "List of my tech notes — mostly security-devopsy-cloudy-software."
+author: xvirgov
+url: "https://doublylinked.com"
+baseurl: ""
+
+# Theme — a clean terminal aesthetic
+remote_theme: b2a3e8/jekyll-theme-console
+
+# Plugins (allowed on GitHub Pages)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-remote-theme
+
+# Permalink format: /YYYY/MM/post-title/
+permalink: /:year/:month/:title/
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Exclude from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
