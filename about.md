@@ -1,21 +1,12 @@
 ---
-layout: default
+layout: page
 title: about
 permalink: /about/
 ---
 
-# about
+I'm xvirgov. This blog is where I write down what I learn while working through computer security topics — sometimes detailed walkthroughs, sometimes quick notes for my future self.
 
-```
-$ finger xvirgov
-Login:     xvirgov
-Domain:    xvirgov.ch
-Interests: computer security, reverse engineering,
-           cryptography, network protocols
-Status:    learning in public
-```
-
-This blog is a place where I write down what I learn while working through computer security topics — sometimes detailed walkthroughs, sometimes quick notes for my future self. Topics will include but aren't limited to:
+Topics I expect to cover:
 
 - binary exploitation
 - web security
@@ -30,6 +21,4 @@ This blog is a place where I write down what I learn while working through compu
 
 ## colophon
 
-Built with [Jekyll](https://jekyllrb.com/) using the [console theme](https://github.com/b2a/jekyll-theme-console). Hosted on GitHub Pages. Source available [on GitHub](https://github.com/xvirgov/xvirgov.github.io).
-
-[← back](/)
+Built with [Jekyll](https://jekyllrb.com/) and the [Minima](https://github.com/jekyll/minima) theme, hosted on GitHub Pages. Source: [github.com/xvirgov/doublylinked](https://github.com/xvirgov/doublylinked).
