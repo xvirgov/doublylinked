@@ -4,14 +4,13 @@ author: xvirgov
 url: "https://doublylinked.com"
 baseurl: ""
 
-# Theme — a clean terminal aesthetic
-remote_theme: b2a3e8/jekyll-theme-console
+# Theme — Minima, GitHub Pages' natively supported default
+theme: minima
 
 # Plugins (allowed on GitHub Pages)
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-remote-theme
 
 # Permalink format: /YYYY/MM/post-title/
 permalink: /:year/:month/:title/
