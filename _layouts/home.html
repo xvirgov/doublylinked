@@ -24,7 +24,6 @@ layout: default
           <span class="post-card-body">
             <span class="post-card-date">{{ post.date | date: date_format }}</span>
             <span class="post-card-title">{{ post.title | escape }}</span>
-            <span class="post-card-excerpt">{{ post.excerpt | strip_html | normalize_whitespace | truncate: 150 }}</span>
           </span>
         </a>
       </li>
