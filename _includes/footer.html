@@ -1,0 +1,12 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+    <p class="footer-line">
+      <a class="footer-name u-url" href="https://github.com/{{ site.github_username | default: 'xvirgov' }}">{{ site.author | default: site.title | escape }}</a>
+      <span class="footer-sep">·</span>
+      {{ site.description | escape }}
+    </p>
+  </div>
+
+</footer>

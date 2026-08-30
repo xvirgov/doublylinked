@@ -1,0 +1,163 @@
+---
+# Local stylesheet: Minima base + custom article-card styles.
+---
+
+@import "minima";
+
+.home-intro {
+  margin-bottom: 2rem;
+}
+
+.post-list-heading {
+  margin-top: 1.5rem;
+}
+
+.post-cards {
+  list-style: none;
+  margin-left: 0;
+  padding: 0;
+  display: grid;
+  gap: 1.1rem;
+}
+
+.post-card-link {
+  display: flex;
+  gap: 1rem;
+  align-items: stretch;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 0.8rem;
+  transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease;
+}
+
+.post-card-link:hover,
+.post-card-link:focus-visible {
+  border-color: #b8c9e6;
+  box-shadow: 0 8px 22px -14px rgba(20, 40, 80, .45);
+  transform: translateY(-2px);
+}
+
+.post-card-thumb {
+  flex: 0 0 auto;
+  width: 150px;
+  height: 104px;
+  border-radius: 7px;
+  overflow: hidden;
+  background: #f2f3f5;
+}
+
+.post-card-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.post-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: .28rem;
+  min-width: 0;
+}
+
+.post-card-date {
+  color: #828282;
+  font-size: .8rem;
+}
+
+.post-card-title {
+  color: #2a7ae2;
+  font-weight: 600;
+  font-size: 1.15rem;
+  line-height: 1.25;
+}
+
+.post-card-link:hover .post-card-title {
+  text-decoration: underline;
+}
+
+.post-card-excerpt {
+  color: #555;
+  font-size: .92rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 520px) {
+  .post-card-link { flex-direction: column; }
+  .post-card-thumb { width: 100%; height: 160px; }
+}
+
+/* Footer: minimal centered one-liner (no heading) */
+.site-footer .footer-line {
+  margin: 0;
+  text-align: center;
+  color: #828282;
+  font-size: .9rem;
+  line-height: 1.5;
+}
+
+.footer-name {
+  font-weight: 600;
+}
+
+.footer-sep {
+  margin: 0 .4rem;
+  color: #b3b3b3;
+}
+
+/* Calmer heading scale + section rhythm (Minima's defaults run large and flat, so the
+   page title and section headings look nearly the same size). Clear step-down: title >
+   section > body, with breathing room above each section. */
+.post-title {
+  font-size: 2rem;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.5rem;
+}
+
+.post-content h2 {
+  font-size: 1.5rem;
+  line-height: 1.25;
+  margin-top: 2.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.post-content h3 {
+  font-size: 1.2rem;
+  margin-top: 1.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.post-content p {
+  margin-bottom: 1rem;
+}
+
+/* Lead image: centered, cropped to a band (top/bottom trimmed) so the keypad shows with a little padding */
+.post-content figure.lead {
+  margin: 0 auto 1.75rem;
+  text-align: center;
+}
+
+.post-content figure.lead img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 560px;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+.post-content figure.lead figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #828282;
+}
+
+/* Hide the date/meta line under post titles */
+.post-meta {
+  display: none;
+}

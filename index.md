@@ -1,5 +1,6 @@
 ---
 layout: home
+list_title: articles
 ---
 
-Notes on computer security — exploits, defenses, crypto, and whatever else catches my attention. I'm xvirgov; see the [about page](/about/) for more.
+I use this blog to learn — researching and summarizing my findings is one of my favorite learning methods. The subjects may vary; there's no single topic focus.
